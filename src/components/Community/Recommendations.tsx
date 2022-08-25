@@ -12,7 +12,9 @@ import {
 import { collection, getDocs, limit, orderBy, query } from "firebase/firestore";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaReddit } from "react-icons/fa";
+import { FaAmazon, FaForumbee, FaPeopleCarry, FaReddit } from "react-icons/fa";
+import { IoIosPeople } from "react-icons/io";
+
 import { Community } from "../../atoms/communitiesAtom";
 import { firestore } from "../../firebase/clientApp";
 import useCommunityData from "../../hooks/useCommunityData";
@@ -121,11 +123,12 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
                           />
                         ) : (
                           <Icon
-                            as={FaReddit}
+                            as={IoIosPeople}
                             fontSize={30}
-                            color="brand.100"
+                            color="brand.200"
                             mr={2}
                           />
+                         
                         )}
                         <span
                           style={{

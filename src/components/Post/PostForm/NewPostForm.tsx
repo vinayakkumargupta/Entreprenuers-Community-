@@ -18,7 +18,10 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { useRouter } from "next/router";
+
 import { BiPoll } from "react-icons/bi";
+import { FaAmazon } from "react-icons/fa";
+import { BiCalculator } from "react-icons/bi";
 import { BsLink45Deg, BsMic } from "react-icons/bs";
 import { IoDocumentText, IoImageOutline } from "react-icons/io5";
 import { AiFillCloseCircle } from "react-icons/ai";
@@ -32,7 +35,7 @@ import ImageUpload from "./ImageUpload";
 
 const formTabs = [
   {
-    title: "Post",
+    title: "Share Your Idea",
     icon: IoDocumentText,
   },
   {
@@ -45,11 +48,11 @@ const formTabs = [
   },
   {
     title: "Poll",
-    icon: BiPoll,
+    icon: FaAmazon,
   },
   {
-    title: "Talk",
-    icon: BsMic,
+    title: "Hashtags",
+    icon: FaAmazon,
   },
 ];
 
@@ -147,7 +150,7 @@ const NewPostForm: React.FC<NewPostFormProps> = ({
   };
 
   return (
-    <Flex direction="column" bg="white" borderRadius={4} mt={2}>
+    <Flex direction="column" bg="#000" borderRadius={4} mt={2}>
       <Flex width="100%">
         {formTabs.map((item, index) => (
           <TabItem
@@ -159,7 +162,7 @@ const NewPostForm: React.FC<NewPostFormProps> = ({
         ))}
       </Flex>
       <Flex p={4}>
-        {selectedTab === "Post" && (
+        {selectedTab === "Share Your Idea" && (
           <TextInputs
             textInputs={textInputs}
             onChange={onTextChange}

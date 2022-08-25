@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import ReactDOM from "react-dom";
+import Link from 'next/link'
 import { Stack } from "@chakra-ui/react";
 import {
   collection,
