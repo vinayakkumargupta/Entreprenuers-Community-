@@ -17,8 +17,8 @@ const Moderating: React.FC<ModeratingProps> = ({ snippets }) => {
       {snippets.map((snippet) => (
         <MenuListItem
           key={snippet.communityId}
-          displayText={`r/${snippet.communityId}`}
-          link={`r/${snippet.communityId}`}
+          displayText={`e/${snippet.communityId}`}
+          link={`e/${snippet.communityId}`}
           icon={FaReddit}
           iconColor="brand.100"
         />

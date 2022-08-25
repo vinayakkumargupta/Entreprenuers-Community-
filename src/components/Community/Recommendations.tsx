@@ -52,6 +52,7 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
     getCommunityRecommendations();
   }, []);
 
+  
   return (
     <Flex
       direction="column"
@@ -66,15 +67,15 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
         color="white"
         p="6px 10px"
         bg="blue.500"
-        height="70px"
-        borderRadius="4px 4px 0px 0px"
+        height="200px"
+        borderRadius="4px 4px 10px 5px"
         fontWeight={600}
-        bgImage="url(/images/recCommsArt.png)"
+        bgImage="url(/images/community.png)"
         backgroundSize="cover"
         bgGradient="linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)),
-        url('images/recCommsArt.png')"
+        url('images/community.png')"
       >
-        Top Communities
+        <b>Top Pitch</b>
       </Flex>
       <Flex direction="column">
         {loading ? (
@@ -104,7 +105,7 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
                     position="relative"
                     align="center"
                     fontSize="10pt"
-                    borderBottom="1px solid"
+                    borderBottom="3px solid"
                     borderColor="gray.200"
                     p="10px 12px"
                     fontWeight={600}

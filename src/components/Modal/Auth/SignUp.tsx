@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Flex, Text,Spacer } from "@chakra-ui/react";
+import { Button, Flex, Text,Spacer,Image } from "@chakra-ui/react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { ModalView } from "../../../atoms/authModalAtom";
 import { auth } from "../../../firebase/clientApp";
@@ -46,57 +46,7 @@ const SignUp: React.FC<SignUpProps> = ({ toggleView }) => {
 
   return (
     <Flex>
-      <Flex
-    flexDirection='row'>
-    <form onSubmit={onSubmit}>
-      <InputItem
-        name="email"
-        placeholder="email"
-        type="text"
-        mb={2}
-        onChange={onChange}
-      />
-      <InputItem
-        name="password"
-        placeholder="password"
-        type="password"
-        mb={2}
-        onChange={onChange}
-      />
-      <InputItem
-        name="confirmPassword"
-        placeholder="confirm password"
-        type="password"
-        onChange={onChange}
-      />
-      <Text textAlign="center" mt={2} fontSize="10pt" color="red">
-        {formError ||
-          FIREBASE_ERRORS[authError?.message as keyof typeof FIREBASE_ERRORS]}
-      </Text>
-      <Button
-        width="100%"
-        height="36px"
-        mb={2}
-        mt={2}
-        type="submit"
-        isLoading={loading}
-      >
-        Sign Up
-      </Button>
-      <Flex fontSize="9pt" justifyContent="center">
-        <Text mr={1}>Have an account?</Text>
-        <Text
-          color="blue.500"
-          fontWeight={700}
-          cursor="pointer"
-          onClick={() => toggleView("login")}
-        >
-          LOG IN
-        </Text>
-      </Flex>
-    </form>
-    
-    </Flex>
+      
     <Spacer></Spacer>
     <Flex
     >
@@ -149,6 +99,13 @@ const SignUp: React.FC<SignUpProps> = ({ toggleView }) => {
     </form>
     
     </Flex>
+    <Flex>
+    <Spacer width = "500"></Spacer>
+
+    <Text
+    textColor="#fff"
+                        
+                        >    dddddddddd</Text></Flex>
     <Flex
     >
     <form onSubmit={onSubmit}>
@@ -200,6 +157,8 @@ const SignUp: React.FC<SignUpProps> = ({ toggleView }) => {
     </form>
     
     </Flex>
+  
+
     </Flex>
     
   );

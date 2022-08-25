@@ -20,16 +20,16 @@ export const Button: ComponentStyleConfig = {
   },
   variants: {
     solid: {
-      color: "white",
-      bg: "blue.500",
+      color: "black",
+      bg: "#F5B7B1  ",
       _hover: {
-        bg: "blue.400",
+        bg: "#F5B7B1  ",
       },
     },
     outline: {
-      color: "blue.500",
+      color: "#F5B7B1  ",
       border: "1px solid",
-      borderColor: "blue.500",
+      borderColor: "#F5B7B1  ",
     },
     oauth: {
       height: "34px",
