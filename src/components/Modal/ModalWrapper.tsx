@@ -23,9 +23,9 @@ const ModalWrapper: React.FC<ModalWrapperProps> = ({
 }) => {
   return (
     <>
-      <Modal isOpen={isOpen} onClose={onClose} size="lg">
+      <Modal isOpen={isOpen} onClose={onClose} size="full">
         <ModalOverlay />
-        <ModalContent width={{ base: "sm", md: "xl" }}>{children}</ModalContent>
+        <ModalContent width="500">{children}</ModalContent>
       </Modal>
     </>
   );

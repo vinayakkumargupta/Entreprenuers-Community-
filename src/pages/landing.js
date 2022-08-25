@@ -66,7 +66,7 @@ function App() {
   </section> */}
   <section className="bg-gradient-secondary"> 
            <header className="header-2">
-  <div className="page-header min-vh-75 relative" style={{backgroundImage: 'Url(https://images.unsplash.com/photo-1661376019257-4e5d8a45fc6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80)'}}>
+  <div className="page-header min-vh-75 relative" style={{backgroundImage: 'Url(https://i.imgur.com/lQ0G53C.jpg)'}}>
     <span className="bg-gradient-primary opacity-4"></span>
     <div className="container">
       <div className="row">
@@ -110,7 +110,7 @@ function App() {
   <div class="container px-4 px-lg-5">
                 
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="/img/ehacth.jpg" alt="..."/></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="https://i.imgur.com/9iWwG4d.jpg" alt="..."/></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Why E-Hatch?</h4>
@@ -124,7 +124,7 @@ function App() {
                 </div>
                 
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="img/Entrepreneur.jpg" alt="..."/></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="https://i.imgur.com/pVxGvwA.jpg" alt="..."/></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -139,7 +139,7 @@ function App() {
                 </div>
                 
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="/img/mentor.png" alt="..."/></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="https://i.imgur.com/d3YcIpx.jpg" alt="..."/></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -156,7 +156,7 @@ function App() {
 
 
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="img/investor.png" alt="..."/></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="https://i.imgur.com/oEvkyhl.jpg" alt="..."/></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
@@ -171,7 +171,7 @@ function App() {
                 </div>
                 
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="/img/viewers.jpg" alt="..."/></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="https://i.imgur.com/YMxeoNp.jpg" alt="..."/></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">

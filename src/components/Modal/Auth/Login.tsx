@@ -41,6 +41,8 @@ const Login: React.FC<LoginProps> = ({ toggleView }) => {
   };
 
   return (
+    <Flex 
+    flexDirection ="column">
     <form onSubmit={onSubmit}>
       <InputItem
         name="email"
@@ -94,6 +96,7 @@ const Login: React.FC<LoginProps> = ({ toggleView }) => {
         </Text>
       </Flex>
     </form>
+    </Flex>
   );
 };
 export default Login;

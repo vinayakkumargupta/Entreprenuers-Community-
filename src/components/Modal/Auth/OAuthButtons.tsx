@@ -9,19 +9,19 @@ const OAuthButtons: React.FC<OAuthButtonsProps> = () => {
   const [signInWithGoogle, _, loading, error] = useSignInWithGoogle(auth);
 
   return (
-    <Flex direction="column" mb={4} width="100%">
+    <Flex direction="column" mb={9} width="100%">
       <Button
         variant="oauth"
-        mb={2}
+        mb={8}
         onClick={() => signInWithGoogle()}
         isLoading={loading}
       >
-        <Image src="/images/googlelogo.png" height="20px" mr={4} />
+        <Image src="/images/googlelogo.png" height="20px" mr={9}  />
         Continue with Google
       </Button>
       <Button variant="oauth">Some Other Provider</Button>
       {error && (
-        <Text textAlign="center" fontSize="10pt" color="red" mt={2}>
+        <Text textAlign="center" fontSize="10pt" color="red" mt={9}>
           {error}
         </Text>
       )}

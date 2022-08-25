@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
       bg="#fff"
       height="44px"
       rounded ="5px"
-      margin="20px 100px 0px 100px"
+      
       padding="6px 12px "
       justifyContent={{ md: "space-between" }}
     >
@@ -34,6 +34,7 @@ const Navbar: React.FC = () => {
         width={{ base: "40px", md: "auto" }}
         mr={{ base: 0, md: 2 }}
         cursor="pointer"
+        margin="0px 100px 0px 100px"
         onClick={() => onSelectMenuItem(defaultMenuItem)}
       >
         <Image src="/images/logo.png" height="37px" fit="cover" />

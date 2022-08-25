@@ -55,17 +55,17 @@ const AuthModal: React.FC<AuthModalProps> = () => {
       </ModalHeader>
       <ModalCloseButton />
       <ModalBody
-        display="flex"
+        display="-webkit-flex"
         flexDirection="column"
         alignItems="center"
         justifyContent="center"
-        pb={6}
+        pb={12}
       >
         <Flex
           direction="column"
           alignItems="center"
           justifyContent="center"
-          width="70%"
+          width="190%"
         >
           {modalState.view === "login" || modalState.view === "signup" ? (
             <>
