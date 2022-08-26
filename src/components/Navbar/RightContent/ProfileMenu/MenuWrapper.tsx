@@ -18,7 +18,7 @@ import { auth } from "../../../../firebase/clientApp";
 import NoUserList from "./NoUserList";
 import UserList from "./UserList";
 
-import { FaRedditSquare } from "react-icons/fa";
+import { FaConnectdevelop, FaRedditSquare } from "react-icons/fa";
 import { VscAccount } from "react-icons/vsc";
 import { IoSparkles } from "react-icons/io5";
 
@@ -43,7 +43,7 @@ const MenuWrapper: React.FC<MenuWrapperProps> = () => {
                   fontSize={24}
                   mr={1}
                   color="gray.300"
-                  as={FaRedditSquare}
+                  as={FaConnectdevelop}
                 />
                 <Box
                   display={{ base: "none", lg: "flex" }}

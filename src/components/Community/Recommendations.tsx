@@ -12,7 +12,7 @@ import {
 import { collection, getDocs, limit, orderBy, query } from "firebase/firestore";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaAmazon, FaForumbee, FaPeopleCarry, FaReddit } from "react-icons/fa";
+import { FaAmazon, FaForumbee, FaPeopleCarry, FaConnectdevelop } from "react-icons/fa";
 import { IoIosPeople } from "react-icons/io";
 
 import { Community } from "../../atoms/communitiesAtom";
@@ -137,7 +137,7 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
                             overflow: "hidden",
                             textOverflow: "ellipsis",
                           }}
-                        >{`r/${item.id}`}</span>
+                        >{`e/${item.id}`}</span>
                       </Flex>
                     </Flex>
                     <Box position="absolute" right="10px">

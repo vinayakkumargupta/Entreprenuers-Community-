@@ -18,10 +18,11 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { useRouter } from "next/router";
-
-import { BiPoll } from "react-icons/bi";
-import { FaAmazon } from "react-icons/fa";
-import { BiCalculator } from "react-icons/bi";
+import { FcIdea } from "react-icons/fc";
+import { FcPicture} from "react-icons/fc";
+import { FcLink} from "react-icons/fc";
+import {FcBarChart } from "react-icons/fc";
+import { FaSlackHash } from "react-icons/fa";
 import { BsLink45Deg, BsMic } from "react-icons/bs";
 import { IoDocumentText, IoImageOutline } from "react-icons/io5";
 import { AiFillCloseCircle } from "react-icons/ai";
@@ -36,23 +37,23 @@ import ImageUpload from "./ImageUpload";
 const formTabs = [
   {
     title: "Share Your Idea",
-    icon: IoDocumentText,
+    icon: FcIdea,
   },
   {
     title: "Images & Video",
-    icon: IoImageOutline,
+    icon: FcPicture,
   },
   {
     title: "Link",
-    icon: BsLink45Deg,
+    icon: FcLink,
   },
   {
     title: "Poll",
-    icon: FaAmazon,
+    icon: FcBarChart,
   },
   {
-    title: "Hashtags",
-    icon: FaAmazon,
+    title: "Hashtag",
+    icon: FaSlackHash,
   },
 ];
 
@@ -150,7 +151,7 @@ const NewPostForm: React.FC<NewPostFormProps> = ({
   };
 
   return (
-    <Flex direction="column" bg="#000" borderRadius={4} mt={2}>
+    <Flex direction="column" bg="white" borderRadius={4} mt={2}>
       <Flex width="100%">
         {formTabs.map((item, index) => (
           <TabItem

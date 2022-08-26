@@ -252,6 +252,7 @@ const Posts: React.FC<PostsProps> = ({
 
   return (
     <>
+    
       {loading ? (
         <PostLoader />
       ) : (

@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
-import { FaReddit } from "react-icons/fa";
+import { FaConnectdevelop } from "react-icons/fa";
 import { CommunitySnippet } from "../../../atoms/communitiesAtom";
 import MenuListItem from "./MenuListItem";
 
@@ -19,7 +19,7 @@ const Moderating: React.FC<ModeratingProps> = ({ snippets }) => {
           key={snippet.communityId}
           displayText={`e/${snippet.communityId}`}
           link={`e/${snippet.communityId}`}
-          icon={FaReddit}
+          icon={FaConnectdevelop}
           iconColor="brand.100"
         />
       ))}

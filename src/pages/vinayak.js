@@ -72,7 +72,7 @@ function App() {
         <div className="col-lg-7 text-center mx-auto">
           <h1 className="text-white pt-3 mt-n5">E-Hatch </h1>
           <p className="lead text-white mt-3"><b>Truly StartUp !!</b><br/> <i>Turn Ideas Into Reality</i></p>
-          <a href ="/"   className="btn btn-sm  bg-gradient-secondary  mb-0 me-1 mt-2 mt-md-0">Get Started</a>
+          <a href =" "   className="btn btn-sm  bg-gradient-secondary  mb-0 me-1 mt-2 mt-md-0">Get Started</a>
         </div>
       </div>
     </div>
@@ -197,137 +197,6 @@ function App() {
 
 </section>
 
-<section className ="bg-gradient-secondary">
-            <div className="pt-3 pb-4  card-body blur   mt-n8" id="count-stats">
-  <div className="container">
-    <div className="row">
-      <div className="col-lg-9 mx-auto py-3">
-        <div className="row">
-          <div className="col-md-4 position-relative">
-            <div className="p-3 text-center">
-              {/* <h1 className="text-gradient text-primary"><span id="state1" countto="70">700</span>+</h1>
-              <h5 className="mt-3">Books</h5> */}
-              <p className="text-sm font-weight-normal"></p>
-            </div>
-            <hr className="vertical dark"/>
-          </div>
-          <div className="col md-3 position-center">
-            <div className=" text-relative">
-              <h1 > Featured Mentors</h1>
-              {/* <h5 className="mt-3">Authors</h5> */}
-              <p className="text-sm font-weight-normal"></p>
-            </div>
-            <hr className="vertical dark"/>
-          </div>
-          {/* <div className="col-md-4">
-            <div className="p-3 text-center">
-              <h1 className="text-gradient text-primary" id="state3" countto="4">15+</h1>
-              <h5 className="mt-3">Genres</h5>
-              <p className="text-sm font-weight-normal"></p>
-            </div>
-          </div> */}
-          
-        </div>
-        
-      </div>
-      
-    </div>
-    {/* <button href =" " className="btn btn-sm  bg-gradient-secondary  mb-0 me-1 mt-2 mt-md-0">Show Random</button> */}
-  </div>
-         <div class="container">
-                <div class="row align-items-center">
-            {booksdetails.map((books, index) =>{
-                var x = books.imageLink
-                return   <div className="col-sm-4  p-4 md-8 ">
-                <div className="rotating-card-container">
-                <div className="cardcard-rotate card-background card-background-primary shadow-primary mt-md-0 mt-5">
-                 
-                    <div className= "front front-background" style={{backgroundImage: 'url("'+ x  +'")', backgroundSize: 'cover'}}>
-                    <div className="card-body py-7 text-center">
-                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-                        <i className="material-icons text-white text-4xl my-3"></i>
-                        <h3 className="text-white"><br/> </h3>
-                    </div>
-                    </div>
-                    {/* <div className="back back-background" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1616628188725-0a474c982b5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGlkZWF8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60")', backgroundSize: 'cover'}}> */}
-                    <div className="back back-background" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1616628188725-0a474c982b5c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGlkZWF8ZW58MHwxfDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60")', backgroundSize: 'cover'}}>
-                    <br/><br/><br/>
-                    <div className=" text-center">
-                        <h3 className="text-black">Discover More</h3>
-                        <h5 className="text-black "> You will save a lot of time going from prototyping to full-functional code because all elements are implemented.</h5>
-                        <br/><br/><br/><br/>
-                        <a href=".//sections/page-sections/hero-sections.html" target="_blank" className="btn btn-white btn-sm w-50 mx-auto mt-3">Know your Mentor</a>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                </div>
-
-
-
-            }
-            )
-    }
-   </div>
-                </div>
-                </div></section>
-                <br></br> <br></br>
-                <section id="featured-services" className="featured-services">
-      <div className="container" data-aos="fade-up">
-       <div className="p-3 text-center">
-              <h1 > <span id="state2" countto="15">Success Story</span></h1>
-          
-              <p className="text-sm font-weight-normal"></p>
-            </div>
-
-        <div className="row">
-          <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div className="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div className="icon">
-              <i class="material-icons ">people</i>
-              </div>
-              <h4 className="title"><a href="">Mentor</a></h4>
-              <p className="description">Gain opportunities and experience not shared in books</p>
-            </div>
-          </div>
-
-          <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div className="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div className="icon">
-              
-              <i class="material-icons ">lightbulb</i>
-              </div>
-              <h4 className="title"><a href="">Entrepreneur</a></h4>
-              <p className="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div className="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div className="icon">
-              
-              <i class="material-icons ">paid</i>
-              </div>
-              <h4 className="title"><a href="">Investor</a></h4>
-              <p className="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div className="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div className="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div className="icon">
-             
-              <i class="material-icons ">hail</i>
-              </div>
-              <h4 className="title"><a href="">Viewer</a></h4>
-              <p className="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
     <br></br> <br></br> <br></br>
   </>
   );

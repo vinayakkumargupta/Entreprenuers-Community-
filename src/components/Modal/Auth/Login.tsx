@@ -29,6 +29,7 @@ const Login: React.FC<LoginProps> = ({ toggleView }) => {
 
     // Valid form inputs
     signInWithEmailAndPassword(form.email, form.password);
+    
   };
 
   const onChange = ({

@@ -7,7 +7,7 @@ import {
   DirectoryMenuItem,
   directoryMenuState,
 } from "../atoms/directoryMenuAtom";
-import { FaReddit } from "react-icons/fa";
+import { FaConnectdevelop } from "react-icons/fa";
 
 const useDirectory = () => {
   const [directoryState, setDirectoryState] =
@@ -49,7 +49,7 @@ const useDirectory = () => {
         selectedMenuItem: {
           displayText: `e/${existingCommunity.id}`,
           link: `e/${existingCommunity.id}`,
-          icon: FaReddit,
+          icon: FaConnectdevelop,
           iconColor: "blue.500",
           imageURL: existingCommunity.imageURL,
         },

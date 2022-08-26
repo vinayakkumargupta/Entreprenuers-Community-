@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Box, Flex, Icon, MenuItem, Text } from "@chakra-ui/react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { FaReddit } from "react-icons/fa";
+import { FaConnectdevelop } from "react-icons/fa";
 import { GrAdd } from "react-icons/gr";
 import { useRecoilValue } from "recoil";
 import { communityState } from "../../../atoms/communitiesAtom";
@@ -40,7 +40,7 @@ const Communities: React.FC<CommunitiesProps> = ({ menuOpen }) => {
                 key={snippet.communityId}
                 displayText={`e/${snippet.communityId}`}
                 link={`/e/${snippet.communityId}`}
-                icon={FaReddit}
+                icon={FaConnectdevelop}
                 iconColor="brand.100"
               />
             ))}
@@ -64,7 +64,7 @@ const Communities: React.FC<CommunitiesProps> = ({ menuOpen }) => {
         {mySnippets.map((snippet) => (
           <MenuListItem
             key={snippet.communityId}
-            icon={FaReddit}
+            icon={FaConnectdevelop}
             displayText={`e/${snippet.communityId}`}
             link={`/e/${snippet.communityId}`}
             iconColor="blue.500"

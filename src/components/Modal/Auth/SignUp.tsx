@@ -46,11 +46,25 @@ const SignUp: React.FC<SignUpProps> = ({ toggleView }) => {
 
   return (
     <Flex>
+      {/* <Flex 
+      flexDirection = "column"><Flex>
+
+      <Image
       
+      src ="https://cdn2.vectorstock.com/i/1000x1000/09/86/entrepreneur-icon-male-person-profile-avatar-vector-26160986.jpg"></Image></Flex>
+      <Flex><Image
+      
+      src ="https://flyclipart.com/thumb2/entrepreneur-launch-startup-icon-withpng-and-vector-format-736358.png"></Image></Flex></Flex> */}
     <Spacer></Spacer>
     <Flex
     >
     <form onSubmit={onSubmit}>
+      <Text
+textStyle="bold"
+textColor="#000"
+fontSize="40"
+fontStyle="oblique"
+      textAlign="center">Entreprenuer</Text>
       <InputItem
         name="email"
         placeholder="email"
@@ -109,6 +123,12 @@ const SignUp: React.FC<SignUpProps> = ({ toggleView }) => {
     <Flex
     >
     <form onSubmit={onSubmit}>
+    <Text
+textStyle="bold"
+textColor="#000"
+fontSize="40"
+fontStyle="oblique"
+      textAlign="center">Entrepreneur</Text>
       <InputItem
         name="email"
         placeholder="email"
