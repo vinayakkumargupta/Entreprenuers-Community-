@@ -46,10 +46,6 @@ const Home: NextPage = () => {
     console.log("GETTING USER FEED");
     setLoading(true);
     try {
-      /**
-       * if snippets has no length (i.e. user not in any communities yet)
-       * do query for 20 posts ordered by voteStatus
-       */
       const feedPosts: Post[] = [];
 
       // User has joined communities

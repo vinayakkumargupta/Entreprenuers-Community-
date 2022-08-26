@@ -27,7 +27,7 @@ const Directory: React.FC = () => {
             cursor="pointer"
             padding="0px 6px"
             borderRadius="4px"
-            _hover={{ outline: "1px solid", outlineColor: "gray.200" }}
+            _hover={{ outline: "2px solid", outlineColor: "gray.200" }}
             mr={2}
             ml={{ base: 0, md: 2 }}
             onClick={toggleMenuOpen}

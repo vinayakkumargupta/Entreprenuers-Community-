@@ -31,11 +31,9 @@ const Posts: React.FC<PostsProps> = ({
   userId,
   loadingUser,
 }) => {
-  /**
-   * PART OF INITIAL SOLUTION BEFORE CUSTOM HOOK
-   */
+  
   const [loading, setLoading] = useState(false);
-  // const setAuthModalState = useSetRecoilState(authModalState);
+  
   const router = useRouter();
 
   const { postStateValue, setPostStateValue, onVote, onDeletePost } = usePosts(

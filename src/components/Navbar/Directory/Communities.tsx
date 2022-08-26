@@ -67,7 +67,7 @@ const Communities: React.FC<CommunitiesProps> = ({ menuOpen }) => {
             icon={FaConnectdevelop}
             displayText={`e/${snippet.communityId}`}
             link={`/e/${snippet.communityId}`}
-            iconColor="blue.500"
+            iconColor="brand.100"
             imageURL={snippet.imageURL}
           />
         ))}

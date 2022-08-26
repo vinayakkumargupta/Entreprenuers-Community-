@@ -13,7 +13,7 @@ import {
   Spinner,
 } from "@chakra-ui/react";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
-import { RiCakeLine } from "react-icons/ri";
+import { BsFillEmojiWinkFill } from "react-icons/bs";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -97,8 +97,8 @@ const About: React.FC<AboutProps> = ({
         justify="space-between"
         align="center"
         p={3}
-        color="white"
-        bg="blue.400"
+        color="black"
+        bg="#F5B7B1"
         borderRadius="4px 4px 0px 0px"
       >
         <Text fontSize="10pt" fontWeight={700}>
@@ -106,7 +106,7 @@ const About: React.FC<AboutProps> = ({
         </Text>
         <Icon as={HiOutlineDotsHorizontal} cursor="pointer" />
       </Flex>
-      <Flex direction="column" p={3} bg="white" borderRadius="0px 0px 4px 4px">
+      <Flex direction="column" p={3} bg="red.50" borderRadius="0px 0px 4px 4px">
         {loading ? (
           <Stack mt={2}>
             <SkeletonCircle size="10" />
@@ -123,11 +123,11 @@ const About: React.FC<AboutProps> = ({
                 width="100%"
                 p={2}
                 borderRadius={4}
-                border="1px solid"
-                borderColor="gray.300"
+                border="2px solid"
+                borderColor="gray.400"
                 cursor="pointer"
               >
-                <Text fontSize="9pt" fontWeight={700} color="blue.500">
+                <Text fontSize="9pt" fontWeight={700} color="green">
                   Add description
                 </Text>
               </Box>
@@ -136,13 +136,13 @@ const About: React.FC<AboutProps> = ({
               <Flex width="100%" p={2} fontWeight={600} fontSize="10pt">
                 <Flex direction="column" flexGrow={1}>
                   <Text>
-                    {communityData?.numberOfMembers?.toLocaleString()}
+                    <b>{communityData?.numberOfMembers?.toLocaleString()}</b>
                   </Text>
-                  <Text>Members</Text>
+                  <Text><i>Members</i></Text>
                 </Flex>
                 <Flex direction="column" flexGrow={1}>
-                  <Text>1</Text>
-                  <Text>Online</Text>
+                  <Text><b>1</b></Text>
+                  <Text><i>Online</i></Text>
                 </Flex>
               </Flex>
               <Divider />
@@ -153,7 +153,7 @@ const About: React.FC<AboutProps> = ({
                 fontWeight={500}
                 fontSize="10pt"
               >
-                <Icon as={RiCakeLine} mr={2} fontSize={18} />
+                <Icon as={BsFillEmojiWinkFill} mr={2} fontSize={18} />
                 {communityData?.createdAt && (
                   <Text>
                     Created{" "}
@@ -178,7 +178,7 @@ const About: React.FC<AboutProps> = ({
                     <Text fontWeight={600}>Admin</Text>
                     <Flex align="center" justify="space-between">
                       <Text
-                        color="blue.500"
+                        color="green"
                         cursor="pointer"
                         _hover={{ textDecoration: "underline" }}
                         onClick={() => selectFileRef.current?.click()}

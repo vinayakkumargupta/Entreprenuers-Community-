@@ -6,7 +6,7 @@ import { MdOutlineLogin } from "react-icons/md";
 import { useResetRecoilState } from "recoil";
 import { communityState } from "../../../../atoms/communitiesAtom";
 import { auth } from "../../../../firebase/clientApp";
-
+import Link from 'next/link'
 type UserListProps = {};
 
 const UserList: React.FC<UserListProps> = () => {
@@ -23,11 +23,16 @@ const UserList: React.FC<UserListProps> = () => {
         fontSize="10pt"
         fontWeight={700}
         _hover={{ bg: "blue.500", color: "white" }}
-      >
+      ><Link href="https://gjm2v.csb.app/">
+          
         <Flex alignItems="center">
-          <Icon fontSize={20} mr={2} as={CgProfile} />
+          <Flex>
+          
+          <Icon fontSize={20} mr={2} as={CgProfile} /></Flex>
           Profile
+          
         </Flex>
+        </Link>
       </MenuItem>
       <MenuDivider />
       <MenuItem

@@ -75,7 +75,7 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
         bgGradient="linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75)),
         url('images/community.png')"
       >
-        <b>Top Pitch</b>
+        <b>Top Communities</b>
       </Flex>
       <Flex direction="column">
         {loading ? (
@@ -100,7 +100,7 @@ const Recommendations: React.FC<RecommendationsProps> = () => {
                 (snippet) => snippet.communityId === item.id
               );
               return (
-                <Link key={item.id} href={`/r/${item.id}`}>
+                <Link key={item.id} href={`/e/${item.id}`}>
                   <Flex
                     position="relative"
                     align="center"

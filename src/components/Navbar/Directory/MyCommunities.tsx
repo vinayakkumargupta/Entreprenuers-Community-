@@ -33,7 +33,7 @@ const MyCommunities: React.FC<MyCommunitiesProps> = ({ snippets, setOpen }) => {
           displayText={`e/${snippet.communityId}`}
           link={`e/${snippet.communityId}`}
           icon={FaConnectdevelop}
-          iconColor="blue.500"
+          iconColor="brand.100"
         />
       ))}
     </Box>

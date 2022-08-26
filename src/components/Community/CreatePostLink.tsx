@@ -26,7 +26,7 @@ const CreatePostLink: React.FC<CreatePostProps> = () => {
     <Flex
       justify="space-evenly"
       align="center"
-      bg="white"
+      bg="black"
       height="56px"
       borderRadius={4}
       border="1px solid"

@@ -10,10 +10,7 @@ type HeaderProps = {
 };
 
 const Header: React.FC<HeaderProps> = ({ communityData }) => {
-  /**
-   * !!!Don't pass communityData boolean until the end
-   * It's a small optimization!!!
-   */
+
   const { communityStateValue, loading, error, onJoinLeaveCommunity } =
     useCommunityData(!!communityData);
   const isJoined = !!communityStateValue.mySnippets.find(
@@ -43,7 +40,7 @@ const Header: React.FC<HeaderProps> = ({ communityData }) => {
               fontSize={64}
               position="relative"
               top={-3}
-              color="blue.500"
+              color="red.500"
               border="4px solid white"
               borderRadius="50%"
             />

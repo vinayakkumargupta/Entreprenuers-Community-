@@ -42,7 +42,7 @@ const MenuWrapper: React.FC<MenuWrapperProps> = () => {
                 <Icon
                   fontSize={24}
                   mr={1}
-                  color="gray.300"
+                  color="brand.100"
                   as={FaConnectdevelop}
                 />
                 <Box
