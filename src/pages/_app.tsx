@@ -11,7 +11,8 @@ import Navbar from "../components/Navbar";
 import Header from "../components/LandingPage/Landing"
 import "../firebase/clientApp";
 import App from "./landing";
-
+import dynamic from "next/dynamic";
+const ChatBot = dynamic(import('../components/chatbot'), { ssr: false });
 
  function MyApp({ Component, pageProps }: AppProps) {
   
@@ -25,6 +26,7 @@ import App from "./landing";
          <ChakraProvider theme={theme}>
            
          <Layout>
+           <ChatBot></ChatBot>
              <Component {...pageProps} />
            
            </Layout>

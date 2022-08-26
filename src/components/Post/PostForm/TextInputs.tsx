@@ -1,5 +1,5 @@
 import React from "react";
-import { Stack, Input, Textarea, Flex, Button } from "@chakra-ui/react";
+import { Stack, Input, Textarea, Flex, Button,Image } from "@chakra-ui/react";
 
 type TextInputsProps = {
   textInputs: {
@@ -61,6 +61,12 @@ const TextInputs: React.FC<TextInputsProps> = ({
         >
           Post
         </Button>
+      </Flex>
+      <Flex>
+        <Image
+        margin="25px"
+        width="190%"
+        src="https://i.imgur.com/N7LTZLq.png"></Image>
       </Flex>
     </Stack>
   );
